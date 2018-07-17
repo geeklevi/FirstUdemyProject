@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Select Video</title>
+</head>
+<body>
+    <h1>Test Type Info</h1>
+    <form>
+        <div>
+            <label>Select a test</label>
+            <input type="file" accept="vidio/" />
+        </div>
+        <button type="submit">Get Info</button>
+    </form>
+
+    <script>
+
+        const electron = require('electron');
+
+        const { ipcRender } = electron;
+        document.querySelector('form').addEventListener('submit', (e)=>{
+            e.preventDefault();
+            const { path } = document.querySelector('input').files[0];
+
+            ipcRender.send('video:submit', path)
+        })
+    </script>
+</body>
+</html>
