@@ -1,0 +1,22 @@
+{
+  "name": "firstudemyproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geeklevi/FirstUdemyProject.git"
+  },
+  "author": "Levi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geeklevi/FirstUdemyProject/issues"
+  },
+  "homepage": "https://github.com/geeklevi/FirstUdemyProject#readme",
+  "dependencies": {
+    "electron": "^2.0.5"
+  }
+}
